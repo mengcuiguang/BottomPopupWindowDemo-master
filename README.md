@@ -1,56 +1,8 @@
-# BottomPopupWindowView
+# BottomPopupWindowDemo-master
+炫酷的底部弹窗(popupwindow)+布局绽放效果
 
-高仿网易严选底部弹出框
+![image](https://github.com/mengcuiguang/BottomPopupWindowDemo-master/blob/master/test.gif )  
 
-添加引用:
+使用方法：（本人写法狠简单）
 
-######  Add it in your root build.gradle at the end of repositories:
-```
-allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
-}
-```
-###### Add the dependency
-
-```
-dependencies {
-	 compile 'compile 'com.github.jack921:BottomPopupWindowDemo:v1.0''
-}
-```
-
-
-
-调用方法:
-
-```
-<com.example.jack.bottompopupwindowdemo.BottomPopupWindowView
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:background="@android:color/transparent"
-    android:layout_alignParentBottom="true">
-</com.example.jack.bottompopupwindowdemo.BottomPopupWindowView>
-```
-
-```
-设置内容菜单的View
-BottomPopupWindowView.setContextView(bottomView);
-设置没有显示菜单时候显示的View(注:bottomView的高度要和BottomPopupWindowView的高度一样，具体看demo)
-BottomPopupWindowView.setBaseView(bottomView);
-设置动画监听放回的数据，以便根据数据实现动画
-BottomPopupWindowView.setAnimatorListener(new AnimatorListener() {
-    @Override
-    public void startValue(int value) {
-        Log.e("value",value+"");            
-    }
-    @Override
-    public void endValue(int value) {
-        Log.e("value",value+"");          
-    }
-});
-
-```
-
-具体请看demo
+具体参考Demo
